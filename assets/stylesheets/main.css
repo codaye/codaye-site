@@ -69,9 +69,11 @@ a {
   color: #F05F40;
   text-decoration: none; }
   a:visited {
-    color: #d33311; }
+    color: #d33311;
+    text-decoration: none; }
   a:hover {
-    color: #DA3816; }
+    color: #DA3816;
+    text-decoration: none; }
 
 /**
  * Blockquotes
@@ -152,7 +154,17 @@ pre {
   background-color: #F05F40;
   color: #fdfdfd;
   text-align: center;
+  background-image: url(../images/cod.png);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative; }
+  .site-header h2 {
+    font-size: 3em;
+    padding: 40px 0; }
+  .site-header h3 {
+    font-size: 1em;
+    font-weight: normal; }
 
 .site-title {
   font-size: 26px;
@@ -244,17 +256,29 @@ pre {
 .navbar-button {
   display: inline-block; }
   .navbar-button a {
-    line-height: 40px; }
+    line-height: 60px; }
+
+.call-to-action {
+  padding: 48px 0; }
+  .call-to-action a {
+    color: #fdfdfd; }
 
 .cta-btn {
   border: thin #fdfdfd solid;
   -webkit-border-radius: 2px;
           border-radius: 2px;
   padding: 8px 16px; }
+  .cta-btn:hover, .cta-btn:active {
+    background-color: #fdfdfd;
+    color: #F05F40;
+    text-decoration: none; }
 
 @media (min-width: 768px) {
   .navbar-button {
     float: right; } }
+
+.intro {
+  padding: 48px 0 128px; }
 
 /**
  * Site footer

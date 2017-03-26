@@ -96,10 +96,12 @@ a {
 
     &:visited {
         color: darken($brand-color, 15%);
+        text-decoration: none;
     }
 
     &:hover {
         color: $dark-brand-color;
+        text-decoration: none;
     }
 }
 

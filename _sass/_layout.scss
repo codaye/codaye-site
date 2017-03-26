@@ -7,8 +7,24 @@
     color: $white;
     text-align: center;
 
+    background-image: url(../images/cod.png);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+
     // Positioning context for the mobile navigation icon
     position: relative;
+
+
+    h2 {
+        font-size: $extra-huge-font;
+        padding: $huge-space 0;
+    }
+
+    h3 {
+        font-size: $default;
+        font-weight: normal;
+    }
 }
 
 .site-title {
@@ -136,7 +152,15 @@
     display: inline-block;
 
     a {
-        line-height: 40px;
+        line-height: 60px;
+    }
+}
+
+.call-to-action {
+    padding: $really-large-space 0;
+
+    a {
+        color: $white;
     }
 }
 
@@ -144,12 +168,22 @@
     border: thin $white solid;
     border-radius: $small-radius;
     padding: $small-space $medium-space;
+
+    &:hover, &:active {
+        background-color: $white;
+        color: $brand-color;
+        text-decoration: none;
+    }
 }
 
 @media (min-width: 768px){
     .navbar-button {
         float: right;
     }
+}
+
+.intro {
+    padding: $really-large-space 0 $really-huge-space + $really-huge-space;
 }
 
 /**
