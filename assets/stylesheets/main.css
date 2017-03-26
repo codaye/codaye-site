@@ -165,7 +165,6 @@ pre {
     color: #424242; }
 
 .site-nav {
-  float: right;
   line-height: 56px; }
   .site-nav .menu-icon {
     display: none; }
@@ -179,8 +178,6 @@ pre {
       position: absolute;
       top: 9px;
       right: 15px;
-      background-color: #fdfdfd;
-      border: 1px solid #e8e8e8;
       -webkit-border-radius: 5px;
               border-radius: 5px;
       text-align: right; }
@@ -209,6 +206,27 @@ pre {
         margin-left: 20px; }
         .site-nav .page-link:not(:last-child) {
           margin-right: 0; } }
+
+@media (min-width: 768px) {
+  .navbar-nav > li {
+    float: none; } }
+
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+
+.nav li {
+  display: inline; }
+
+.nav a {
+  display: inline-block;
+  padding: 10px; }
+
+.nav > li > a {
+  display: inline;
+  /* padding: 10px 15px; */ }
 
 /**
  * Site footer
