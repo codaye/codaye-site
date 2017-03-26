@@ -2,26 +2,60 @@
 
 // Our variables
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$base-font-size:        16px;
+$base-font-weight:      400;
 
-$spacing-unit:     30px;
+$small-font-size:       $base-font-size * 0.875;
+$default-font-size:     1em;
+$large-font-size:       1.25em;
+$larger-font-size:      1.6em;
+$extra-large-font-size: 2.4em;
+$extra-larger-font:     3em;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$base-line-height:      1.5;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$small-space:           8px;
+$medium-space:          16px;
+$large-space:           24px;
+$larger-space:          32px;
+$huge-space:            40px;
+$really-large-space:    48px;
+$really-huge-space:     64px;
+
+$small-radius:          2px;
+$medium-radius:         4px;
+$large-radius:          8px;
+$round:                 50%;
+
+// Colours
+$text-color:          #111;
+
+$lighter-brand-color: #FFA390;
+$light-brand-color:   #FF8166;
+$brand-color:         #F05F40;
+$dark-brand-color:    #DA3816;
+$darker-brand-color:  #AA2408;
+
+$lighter-alt-color:   #79D79C;
+$light-alt-color:     #4DC078;
+$alt-color:           #2EAE5E;
+$dark-alt-color:      #109E45;
+$darker-alt-color:    #067B32;
+
+$grey-color:          #828282;
+$grey-color-light:     lighten($grey-color, 40%);
+$grey-color-dark:      darken($grey-color, 25%);
+
+$subtle-shadow:       0px 4px 10px 0px rgba(216, 216, 216, 0.5);
+$dark-shadow:         0px 7px 20px 0px rgba(216, 216, 216, 0.75);
+$bold-shadow:         0px 7px 15px 0px #D8D8D8;
+$distant-shadow:      0px 10px 10px 7px rgba(216, 216, 216, 0.5);;
 
 // Width of the content area
-$content-width:    800px;
+$content-width:       800px;
 
-$on-palm:          600px;
-$on-laptop:        800px;
+$on-palm:             600px;
+$on-laptop:           800px;
 
 
 
@@ -32,13 +66,22 @@ $on-laptop:        800px;
 //         padding-left: $spacing-unit / 2;
 //     }
 // }
+
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
         @content;
     }
 }
 
+// Use shadows like this:
+// @mixin box-shadow($shadow-name) {
+//   -webkit-border-radius: $shadow-name;
+//      -moz-border-radius: $shadow-name;
+//       -ms-border-radius: $shadow-name;
+//           border-radius: $shadow-name;
+// }
 
+.box { @include border-radius(10px); }
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
