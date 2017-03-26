@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 // Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family:      'Poppins', sans-serif;
 $base-font-size:        16px;
 $base-font-weight:      400;
 
@@ -29,6 +29,8 @@ $round:                 50%;
 
 // Colours
 $text-color:          #111;
+$white:               #fdfdfd;
+$black:               #0f0f0f;
 
 $lighter-brand-color: #FFA390;
 $light-brand-color:   #FF8166;
@@ -46,10 +48,21 @@ $grey-color:          #828282;
 $grey-color-light:     lighten($grey-color, 40%);
 $grey-color-dark:      darken($grey-color, 25%);
 
-$subtle-shadow:       0px 4px 10px 0px rgba(216, 216, 216, 0.5);
-$dark-shadow:         0px 7px 20px 0px rgba(216, 216, 216, 0.75);
-$bold-shadow:         0px 7px 15px 0px #D8D8D8;
-$distant-shadow:      0px 10px 10px 7px rgba(216, 216, 216, 0.5);;
+$subtle-shadow:        0px 4px 10px 0px rgba(216, 216, 216, 0.5);
+$dark-shadow:          0px 7px 20px 0px rgba(216, 216, 216, 0.75);
+$bold-shadow:          0px 7px 15px 0px #D8D8D8;
+$distant-shadow:       0px 10px 10px 7px rgba(216, 216, 216, 0.5);;
+
+
+// Use shadows like this:
+// @mixin box-shadow($shadow-name) {
+//   -webkit-box-shadow: $shadow-name;
+//      -moz-box-shadow: $shadow-name;
+//       -ms-box-shadow: $shadow-name;
+//           box-shadow: $shadow-name;
+// }
+
+// e.g .box { @include box-shadow($dark-shadow); }
 
 // Width of the content area
 $content-width:       800px;
@@ -72,16 +85,6 @@ $on-laptop:           800px;
         @content;
     }
 }
-
-// Use shadows like this:
-// @mixin box-shadow($shadow-name) {
-//   -webkit-border-radius: $shadow-name;
-//      -moz-border-radius: $shadow-name;
-//       -ms-border-radius: $shadow-name;
-//           border-radius: $shadow-name;
-// }
-
-.box { @include border-radius(10px); }
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
