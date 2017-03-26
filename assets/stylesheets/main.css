@@ -149,6 +149,9 @@ pre {
  */
 .site-header {
   min-height: 56px;
+  background-color: #F05F40;
+  color: #fdfdfd;
+  text-align: center;
   position: relative; }
 
 .site-title {
@@ -162,22 +165,21 @@ pre {
     color: #424242; }
 
 .site-nav {
-  line-height: 24px; }
+  line-height: 24px;
+  padding-top: 10px;
+  color: #fdfdfd;
+  background-color: #F05F40;
+  padding: 0 24px; }
   .site-nav .menu-icon {
     display: none; }
-  .site-nav .page-link {
-    color: #111;
-    line-height: 1.5; }
-    .site-nav .page-link:not(:last-child) {
+  .site-nav a {
+    color: #fdfdfd;
+    line-height: 38px; }
+    .site-nav a:not(:last-child) {
       margin-right: 20px; }
   @media screen and (max-width: 600px) {
     .site-nav {
-      position: absolute;
-      top: 9px;
-      right: 8px;
-      -webkit-border-radius: 5px;
-              border-radius: 5px;
-      text-align: right; }
+      text-align: center; }
       .site-nav .menu-icon {
         display: block;
         float: right;
@@ -205,14 +207,15 @@ pre {
           margin-right: 0; } }
 
 @media (min-width: 768px) {
-  .navbar-nav > li {
+  .navbar-nav > li, .navbar-nav {
     float: none; } }
 
 .nav {
   list-style: none;
   margin: 0;
-  padding: 0;
-  text-align: center; }
+  text-align: center;
+  padding: 10px 0;
+  display: inline-block; }
 
 .nav li {
   display: inline; }
@@ -222,8 +225,36 @@ pre {
   padding: 10px; }
 
 .nav > li > a {
-  display: inline;
-  /* padding: 10px 15px; */ }
+  display: inline; }
+
+.navbar-header {
+  line-height: 70px; }
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  color: inherit;
+  background-color: none; }
+
+.nav > li > a:focus, .nav > li > a:hover {
+  text-decoration: none;
+  background-color: rgba(255, 117, 117, 0);
+  color: #fdfdfd; }
+
+.navbar-button {
+  display: inline-block; }
+  .navbar-button a {
+    line-height: 40px; }
+
+.cta-btn {
+  border: thin #fdfdfd solid;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  padding: 8px 16px; }
+
+@media (min-width: 768px) {
+  .navbar-button {
+    float: right; } }
 
 /**
  * Site footer

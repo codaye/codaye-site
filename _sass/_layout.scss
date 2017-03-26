@@ -3,6 +3,9 @@
  */
 .site-header {
     min-height: 56px;
+    background-color: $brand-color;
+    color: $white;
+    text-align: center;
 
     // Positioning context for the mobile navigation icon
     position: relative;
@@ -24,14 +27,18 @@
 
 .site-nav {
     line-height: $large-space;
+    padding-top: 10px;
+    color: $white;
+    background-color: $brand-color;
+    padding: 0 $large-space;
 
     .menu-icon {
         display: none;
     }
 
-    .page-link {
-        color: $text-color;
-        line-height: $base-line-height;
+    a {
+        color: $white;
+        line-height: 38px;
 
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
@@ -40,11 +47,7 @@
     }
 
     @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: $medium-space / 2;
-        border-radius: 5px;
-        text-align: right;
+        text-align: center;
 
         .menu-icon {
             display: block;
@@ -88,7 +91,7 @@
 }
 
 @media (min-width: 768px){
-    .navbar-nav>li {
+    .navbar-nav>li, .navbar-nav {
         float: none;
     }
 }
@@ -96,8 +99,9 @@
 .nav{
     list-style:none;
     margin:0;
-    padding:0;
     text-align:center;
+    padding: 10px 0;
+    display: inline-block;
 }
 .nav li{
     display:inline;
@@ -109,7 +113,43 @@
 
 .nav>li>a {
     display: inline;
-    /* padding: 10px 15px; */
+}
+
+.navbar-header {
+    line-height: 70px;
+}
+
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover {
+    color: inherit;
+    background-color: none;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: rgba(255, 117, 117, 0);
+    color: $white;
+}
+
+.navbar-button {
+    display: inline-block;
+
+    a {
+        line-height: 40px;
+    }
+}
+
+.cta-btn {
+    border: thin $white solid;
+    border-radius: $small-radius;
+    padding: $small-space $medium-space;
+}
+
+@media (min-width: 768px){
+    .navbar-button {
+        float: right;
+    }
 }
 
 /**
