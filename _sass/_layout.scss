@@ -9,7 +9,7 @@
 
     background-image: url(../images/cod.png);
     background-position: bottom;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 
     // Positioning context for the mobile navigation icon
@@ -17,12 +17,13 @@
 
 
     h2 {
-        font-size: $extra-huge-font;
+        font-size: $extra-huge-font * 1.5;
+        font-weight: normal;
         padding: $huge-space 0;
     }
 
     h3 {
-        font-size: $default;
+        font-size: $large-font-size;
         font-weight: normal;
     }
 }
