@@ -11,8 +11,8 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: 400 16px/1.5 "Cabin", sans-serif;
-  color: #111;
+  font: 400 16px/1.5 "Montserrat Alternates", sans-serif;
+  color: #333;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
@@ -29,6 +29,9 @@ p, blockquote, pre,
 ul, ol, dl, figure,
 .highlight {
   margin-bottom: 8px; }
+
+section {
+  padding: 50px 0; }
 
 /**
  * Images
@@ -283,6 +286,14 @@ pre {
 
 .intro {
   padding: 48px 0 128px; }
+
+.about h2 {
+  font-size: 4.2em;
+  font-family: 'Montserrat', sans-serif;
+  color: #ccc; }
+
+.about p {
+  color: #F05F40; }
 
 /**
  * Site footer

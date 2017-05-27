@@ -191,6 +191,16 @@
     padding: $really-large-space 0 $really-huge-space + $really-huge-space;
 }
 
+.about h2 {
+    font-size: $extra-huge-font * 1.4;
+    font-family: 'Montserrat', sans-serif;
+    color: #ccc;
+}
+
+.about p {
+    color: $brand-color;
+}
+
 /**
  * Site footer
  */
