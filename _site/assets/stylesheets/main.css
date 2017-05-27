@@ -149,7 +149,7 @@ pre {
 /**
  * Site header
  */
-.site-header {
+.intro {
   min-height: 56px;
   background-color: #F05F40;
   color: #fdfdfd;
@@ -159,11 +159,11 @@ pre {
   background-size: contain;
   background-repeat: no-repeat;
   position: relative; }
-  .site-header h2 {
+  .intro h2 {
     font-size: 4.5em;
     font-weight: normal;
     padding: 40px 0; }
-  .site-header h3 {
+  .intro h3 {
     font-size: 1.25em;
     font-weight: normal; }
 
@@ -239,6 +239,9 @@ pre {
 
 .nav > li > a {
   display: inline; }
+
+.navbar {
+  margin-bottom: 0; }
 
 .navbar-header {
   line-height: 70px; }

@@ -1,7 +1,7 @@
 /**
  * Site header
  */
-.site-header {
+.intro {
     min-height: 56px;
     background-color: $brand-color;
     color: $white;
@@ -130,6 +130,10 @@
 
 .nav>li>a {
     display: inline;
+}
+
+.navbar {
+    margin-bottom: 0;
 }
 
 .navbar-header {
