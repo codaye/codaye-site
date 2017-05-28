@@ -284,21 +284,32 @@ pre {
   .navbar-button {
     float: right; } }
 
-.intro {
-  padding: 48px 0 128px; }
-
-.about h2 {
+section h2 {
   font-size: 4.2em;
-  font-family: 'Montserrat', sans-serif;
-  color: #d7d7d7; }
-
-.about p {
-  color: #F05F40; }
+  font-family: 'Montserrat', sans-serif; }
 
 .iPhone {
   background-image: url(../images/iPhone6.png);
   background-size: cover;
   height: 250px; }
+
+.white-bg {
+  background-color: #fdfdfd; }
+  .white-bg h2 {
+    color: #d7d7d7; }
+  .white-bg p {
+    color: #F05F40; }
+
+.grey-bg {
+  background-color: #d7d7d7; }
+  .grey-bg h2 {
+    color: #fdfdfd; }
+  .grey-bg p {
+    color: #333; }
+
+.benefit-title {
+  text-decoration: underline;
+  font-weight: bolder; }
 
 /**
  * Site footer

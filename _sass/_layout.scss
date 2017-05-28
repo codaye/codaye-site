@@ -187,24 +187,44 @@
     }
 }
 
-.intro {
-    padding: $really-large-space 0 $really-huge-space + $really-huge-space;
-}
-
-.about h2 {
+section h2 {
     font-size: $extra-huge-font * 1.4;
     font-family: 'Montserrat', sans-serif;
-    color: #d7d7d7;
-}
-
-.about p {
-    color: $brand-color;
 }
 
 .iPhone {
   background-image: url(../images/iPhone6.png);
   background-size: cover;
   height: 250px
+}
+
+.white-bg {
+  background-color: $white;
+
+  h2 {
+    color: #d7d7d7;
+  }
+
+  p {
+    color: $brand-color;
+  }
+}
+
+.grey-bg {
+  background-color: #d7d7d7;
+
+  h2 {
+    color: $white;
+  }
+
+  p {
+    color: #333;
+  }
+}
+
+.benefit-title {
+  text-decoration: underline;
+  font-weight: bolder;
 }
 
 /**
