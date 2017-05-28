@@ -290,10 +290,15 @@ pre {
 .about h2 {
   font-size: 4.2em;
   font-family: 'Montserrat', sans-serif;
-  color: #ccc; }
+  color: #d7d7d7; }
 
 .about p {
   color: #F05F40; }
+
+.iPhone {
+  background-image: url(../images/iPhone6.png);
+  background-size: cover;
+  height: 250px; }
 
 /**
  * Site footer
