@@ -2,25 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3782378f-0469-4a09-95d0-23e8acf52e81" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/assets/images/logo-orange.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/logo-orange.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/assets/images/social-media/facebook.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/assets/images/social-media/instagram.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/assets/images/social-media/library.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/assets/images/social-media/linkedin.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/assets/images/social-media/whatsapp.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/social-media/facebook.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/social-media/instagram.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/social-media/library.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/social-media/linkedin.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/social-media/whatsapp.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/footer.html" afterPath="$PROJECT_DIR$/_includes/footer.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/home.html" afterPath="$PROJECT_DIR$/_includes/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_sass/_layout.scss" afterPath="$PROJECT_DIR$/_sass/_layout.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/assets/stylesheets/main.css" afterPath="$PROJECT_DIR$/_site/assets/stylesheets/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/index.html" afterPath="$PROJECT_DIR$/_site/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/stylesheets/main.css" afterPath="$PROJECT_DIR$/assets/stylesheets/main.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,8 +22,8 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_includes/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="542">
-              <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+            <state relative-caret-position="329">
+              <caret line="66" column="33" lean-forward="false" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -48,8 +32,8 @@
       <file leaf-file-name="footer.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_includes/footer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="53" lean-forward="false" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+            <state relative-caret-position="255">
+              <caret line="17" column="84" lean-forward="false" selection-start-line="17" selection-start-column="84" selection-end-line="17" selection-end-column="84" />
               <folding />
             </state>
           </provider>
@@ -87,8 +71,8 @@
         <option value="$PROJECT_DIR$/_includes/header.html" />
         <option value="$PROJECT_DIR$/_sass/main.scss" />
         <option value="$PROJECT_DIR$/_sass/_layout.scss" />
-        <option value="$PROJECT_DIR$/_includes/home.html" />
         <option value="$PROJECT_DIR$/_includes/footer.html" />
+        <option value="$PROJECT_DIR$/_includes/home.html" />
       </list>
     </option>
   </component>
@@ -271,12 +255,12 @@
       <option name="presentableId" value="Default" />
       <updated>1495918842046</updated>
       <workItem from="1495918847852" duration="5287000" />
-      <workItem from="1496155447628" duration="10441000" />
+      <workItem from="1496155447628" duration="11025000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15728000" />
+    <option name="totallyTimeSpent" value="16312000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="9" y="22" width="1260" height="698" extended-state="0" />
@@ -363,16 +347,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_includes/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="53" lean-forward="false" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+        <state relative-caret-position="255">
+          <caret line="17" column="84" lean-forward="false" selection-start-line="17" selection-start-column="84" selection-end-line="17" selection-end-column="84" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_includes/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        <state relative-caret-position="329">
+          <caret line="66" column="33" lean-forward="false" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="33" />
           <folding />
         </state>
       </provider>

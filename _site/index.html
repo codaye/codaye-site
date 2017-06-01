@@ -146,10 +146,45 @@
     <div class="container">
         <h2>work</h2>
 
+        <div class="host-element">
+            <script>
+                $('.host-element').frameCarousel({
+                    debug: false,
+                    first: 0,
+                    swipeTreshhold: 10,
+                    frame: 'assets/framecarousel/images/macbookpro.png',
+
+                    frameSize: [{
+                        width: [],
+                        height: [],
+                        minScreenWidth: 768,
+                        maxScreenWidth: 1024
+                    }],
+
+                    collapseThreshold: 450,
+                    boundingBox: {
+                        left: '4.3%',
+                        top: '4.48%',
+                        width: '91.4%',
+                        height: '61.1%'
+                    },
+
+                    /**
+                     * An array of image links to be rendered within frame. Images don't have to adhere
+                     * to any size (they don't even have to have same size), but it'll help if their
+                     * aspect ratio is same as aspect ratio of boundingBox.
+                     */
+                    images: ['path/to/frame-carousel/sample/1.jpg',
+                             'path/to/frame-carousel/sample/2.jpg',
+                             'path/to/frame-carousel/sample/10.jpg']
+                });
+            </script>
+        </div>
 
 
     </div>
 </section>
+
 
     <footer class="site-footer">
 
@@ -158,7 +193,6 @@
       <img src="assets/images/logo-orange.png" alt="codaye logo" />
 
       <div class="social-media">
-        <a href="https://blog.codaye.com" target="_blank"><img src="assets/images/social-media/library.svg" alt="facebook"/></a>
         <a href="https://api.whatsapp.com/send?phone=2347036809348" target="_blank"><img src="assets/images/social-media/whatsapp.svg" alt="whatsapp"/></a>
         <a href="https://www.facebook.com/codayetech" target="_blank"><img src="assets/images/social-media/facebook.svg" alt="facebook"/> </a>
         <a href="https://www.twitter.com/codayetech" target="_blank"><img src="assets/images/social-media/twitter.svg" alt="twitter"/></a>
@@ -167,6 +201,9 @@
       </div>
     </div>
   </div>
+
+  <link rel="stylesheet" href="assets/frame-carousel/jquery.frame-carousel.min.css">
+  <script type="text/javascript" src="assets/frame-carousel/jquery.frame-carousel.min.js"></script>
 
 </footer>
 
