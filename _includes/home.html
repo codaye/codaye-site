@@ -57,13 +57,13 @@
         <div class="host-element">
             <script>
                 $('.host-element').frameCarousel({
-                    debug: false,
+                    debug: true,
                     first: 0,
                     swipeTreshhold: 10,
-                    frame: 'assets/framecarousel/images/macbookpro.png',
+                    frame: 'assets/frame-carousel/images/macbookpro.png',
 
                     frameSize: [{
-                        width: [],
+                        width: 1024,
                         height: [],
                         minScreenWidth: 768,
                         maxScreenWidth: 1024
@@ -71,20 +71,15 @@
 
                     collapseThreshold: 450,
                     boundingBox: {
-                        left: '4.3%',
-                        top: '4.48%',
-                        width: '91.4%',
-                        height: '61.1%'
+                        left: '12.2%',
+                        top: '6.1%',
+                        width: '75.4%',
+                        height: '81.8%'
                     },
 
-                    /**
-                     * An array of image links to be rendered within frame. Images don't have to adhere
-                     * to any size (they don't even have to have same size), but it'll help if their
-                     * aspect ratio is same as aspect ratio of boundingBox.
-                     */
-                    images: ['path/to/frame-carousel/sample/1.jpg',
-                             'path/to/frame-carousel/sample/2.jpg',
-                             'path/to/frame-carousel/sample/10.jpg']
+                    images: ['assets/frame-carousel/images/site-1.jpg',
+                             'assets/frame-carousel/images/site-2.jpg',
+                             'assets/frame-carousel/images/site-3.jpg']
                 });
             </script>
         </div>

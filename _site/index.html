@@ -7,7 +7,7 @@
   <meta name="viewport"             content="width=device-width, initial-scale=1">
 
   <title>Codaye Site</title>
-  <meta name="description"          content="Codaye Technologies is a software development company committed to building beautiful,  functional websites for individuals and businesses.
+  <meta name="description"          content="Codaye Technologies is a software development company committed to building beautiful, functional websites for individuals and businesses.
 "/>
   <meta name="theme-color" content="#F05F40">
 
@@ -18,13 +18,20 @@
   <link rel="stylesheet"            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
   <link rel="stylesheet"            href="/assets/stylesheets/main.css"/>
-  <link rel="canonical"             href="http://yourdomain.com/">
+  <link rel="canonical"             href="http://codaye.com/">
   <link rel="alternate"             type="application/rss+xml" title="Codaye Site" href="http://medium.com/feed/codaye-tech">
+
+  <!-- JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  <!-- FRAME CAROUSEL -->
+  <link rel="stylesheet" href="assets/frame-carousel/jquery.frame-carousel.min.css">
+  <script type="text/javascript" src="assets/frame-carousel/jquery.frame-carousel.min.js"></script>
 
   <!-- FACEBOOK OG -->
   <meta property="og:url"           content="http://codaye.com"/>
   <meta property="og:title"         content="Codaye Site ">
-  <meta property="og:description"   content="Codaye Technologies is a software development company committed to building beautiful,  functional websites for individuals and businesses." >
+  <meta property="og:description"   content="Codaye Technologies is a software development company committed to building beautiful, functional websites for individuals and businesses." >
   <meta property="og:site_name"     content="Codaye"/>
   <meta property="og:image"         content="/assets/images/banner.jpg" />
   <link rel="shotrcut icon"         href="/assets/images/favicon.png" type="image/png">
@@ -35,7 +42,7 @@
   <meta name="twitter:site"         content="@codayetech">
   <meta name="twitter:creator"      content="@codayetech">
   <meta name="twitter:title"        content="Codaye Site ">
-  <meta name="twitter:description"  content="Codaye Technologies is a software development company committed to building beautiful,  functional websites for individuals and businesses." />
+  <meta name="twitter:description"  content="Codaye Technologies is a software development company committed to building beautiful, functional websites for individuals and businesses." />
   <meta name="twitter:image"        content="/assets/images/banner.jpg" />
 
   <!-- GOOGLE+ -->
@@ -149,13 +156,13 @@
         <div class="host-element">
             <script>
                 $('.host-element').frameCarousel({
-                    debug: false,
+                    debug: true,
                     first: 0,
                     swipeTreshhold: 10,
-                    frame: 'assets/framecarousel/images/macbookpro.png',
+                    frame: 'assets/frame-carousel/images/macbookpro.png',
 
                     frameSize: [{
-                        width: [],
+                        width: 1024,
                         height: [],
                         minScreenWidth: 768,
                         maxScreenWidth: 1024
@@ -163,20 +170,15 @@
 
                     collapseThreshold: 450,
                     boundingBox: {
-                        left: '4.3%',
-                        top: '4.48%',
-                        width: '91.4%',
-                        height: '61.1%'
+                        left: '12.2%',
+                        top: '6.1%',
+                        width: '75.4%',
+                        height: '81.8%'
                     },
 
-                    /**
-                     * An array of image links to be rendered within frame. Images don't have to adhere
-                     * to any size (they don't even have to have same size), but it'll help if their
-                     * aspect ratio is same as aspect ratio of boundingBox.
-                     */
-                    images: ['path/to/frame-carousel/sample/1.jpg',
-                             'path/to/frame-carousel/sample/2.jpg',
-                             'path/to/frame-carousel/sample/10.jpg']
+                    images: ['assets/frame-carousel/images/site-1.jpg',
+                             'assets/frame-carousel/images/site-2.jpg',
+                             'assets/frame-carousel/images/site-3.jpg']
                 });
             </script>
         </div>
@@ -201,9 +203,6 @@
       </div>
     </div>
   </div>
-
-  <link rel="stylesheet" href="assets/frame-carousel/jquery.frame-carousel.min.css">
-  <script type="text/javascript" src="assets/frame-carousel/jquery.frame-carousel.min.js"></script>
 
 </footer>
 
