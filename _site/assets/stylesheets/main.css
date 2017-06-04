@@ -321,9 +321,29 @@ section h2 {
   -ms-box-shadow: 0px 4px 10px 0px rgba(119, 119, 119, 0.64);
   box-shadow: 0px 4px 10px 0px rgba(119, 119, 119, 0.64); }
 
+/*
+** PORTFOLIO
+*/
 .fc {
   display: block;
   margin: 60px auto 80px; }
+
+.fc .fc-btn {
+  color: #fdfdfd;
+  background-color: #F05F40;
+  border: 1px solid #F05F40;
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: .3;
+  font-size: 40px;
+  opacity: .7; }
+
+.fc .fc-btn.fc-btn-left:before {
+  border-color: transparent #fff transparent transparent !important; }
+
+.fc .fc-btn.fc-btn-right:before {
+  border-color: transparent transparent transparent #fff !important; }
 
 /**
 *Social Media
