@@ -140,8 +140,8 @@
     line-height: 70px;
 }
 
-.navbar-default .navbar-nav>.active>a, 
-.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover {
     color: inherit;
     background-color: none;
@@ -241,6 +241,11 @@ section h2 {
      }
 
   @include box-shadow(0px 4px 10px 0px rgba(119, 119, 119, 0.64));
+}
+
+.fc {
+    display: block;
+    margin: 60px auto 80px;
 }
 
 /**

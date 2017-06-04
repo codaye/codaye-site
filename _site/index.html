@@ -14,19 +14,19 @@
   <!--FONTS-->
   <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates|Montserrat|Playfair+Display" rel="stylesheet">
 
-  <!--STYLESHEETS  -->
-  <link rel="stylesheet"            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-  <link rel="stylesheet"            href="/assets/stylesheets/main.css"/>
-  <link rel="canonical"             href="http://codaye.com/">
-  <link rel="alternate"             type="application/rss+xml" title="Codaye Site" href="http://medium.com/feed/codaye-tech">
-
   <!-- JQUERY -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
   <!-- FRAME CAROUSEL -->
   <link rel="stylesheet" href="assets/frame-carousel/jquery.frame-carousel.min.css">
   <script type="text/javascript" src="assets/frame-carousel/jquery.frame-carousel.min.js"></script>
+
+  <!--STYLESHEETS  -->
+  <link rel="stylesheet"            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <link rel="stylesheet"            href="/assets/stylesheets/main.css"/>
+  <link rel="canonical"             href="http://codaye.com/">
+  <link rel="alternate"             type="application/rss+xml" title="Codaye Site" href="http://medium.com/feed/codaye-tech">
 
   <!-- FACEBOOK OG -->
   <meta property="og:url"           content="http://codaye.com"/>
@@ -161,12 +161,39 @@
                     swipeTreshhold: 10,
                     frame: 'assets/frame-carousel/images/macbookpro.png',
 
-                    frameSize: [{
-                        width: 1024,
-                        height: [],
-                        minScreenWidth: 768,
-                        maxScreenWidth: 1024
-                    }],
+                    frameSize: [
+                      {
+                        width: 300,
+                        maxScreenWidth: 320
+                      },
+                      {
+                        width: 320,
+                        maxScreenWidth: 375
+                      },
+                      {
+                        width: 375,
+                        maxScreenWidth: 475
+                      },
+                      {
+                        width: 475,
+                        maxScreenWidth: 575
+                      },
+                      {
+                        width: 575,
+                        maxScreenWidth: 675
+                      },
+                      {
+                        width: 675,
+                        maxScreenWidth: 775
+                      },
+                      {
+                        width: 775,
+                        maxScreenWidth: 950
+                      },
+                      {
+                        width: 950,
+                        maxScreenWidth: 1280
+                      }],
 
                     collapseThreshold: 450,
                     boundingBox: {
@@ -178,7 +205,12 @@
 
                     images: ['assets/frame-carousel/images/site-1.jpg',
                              'assets/frame-carousel/images/site-2.jpg',
-                             'assets/frame-carousel/images/site-3.jpg']
+                             'assets/frame-carousel/images/site-3.jpg',
+                             'assets/frame-carousel/images/site-4.jpg',
+                             'assets/frame-carousel/images/site-5.jpg',
+                             'assets/frame-carousel/images/site-6.jpg',
+                             'assets/frame-carousel/images/site-7.jpg',
+                             'assets/frame-carousel/images/site-8.png']
                 });
             </script>
         </div>
