@@ -9,12 +9,10 @@
 title: Codaye Site
 email: contact@codaye.com
 description: > # this means to ignore newlines until "baseurl:"
-  Codaye Technologies is a software development company committed to building beautiful, 
+  Codaye Technologies is a software development company committed to building beautiful,
   functional websites for individuals and businesses.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://codaye.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
