@@ -278,7 +278,8 @@ pre {
   border: thin #fdfdfd solid;
   -webkit-border-radius: 2px;
           border-radius: 2px;
-  padding: 8px 16px; }
+  padding: 8px 16px;
+  color: #fdfdfd; }
   .cta-btn:hover, .cta-btn:active {
     background-color: #fdfdfd;
     color: #F05F40;
@@ -422,14 +423,33 @@ section h2 {
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid #e8e8e8;
-  padding: 16px 0; }
+  height: auto; }
   .site-footer .col-md-8 {
     float: none;
     margin: auto;
     text-align: center; }
     .site-footer .col-md-8 img {
       margin: 0 auto; }
+
+.top-footer {
+  background-color: #F05F40;
+  color: #fff;
+  text-align: center;
+  padding: 16px 0; }
+  .top-footer h2 {
+    margin-bottom: 0;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 24px; }
+  .top-footer .cta {
+    padding: 5px; }
+  .top-footer .cta-btn {
+    display: inline-block; }
+  .top-footer .cta-btn:visited {
+    color: #fdfdfd;
+    text-decoration: none; }
+  .top-footer .cta-btn:hover {
+    color: #F05F40; }
 
 .footer-heading {
   font-size: 18px;

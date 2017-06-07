@@ -179,11 +179,12 @@
     border: thin $white solid;
     border-radius: $small-radius;
     padding: $small-space $medium-space;
+    color: $white;
 
     &:hover, &:active {
-        background-color: $white;
-        color: $brand-color;
-        text-decoration: none;
+      background-color: $white;
+      color: $brand-color;
+      text-decoration: none;
     }
 }
 
@@ -364,8 +365,7 @@ section h2 {
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
-    padding: $medium-space 0;
+  height: auto;
 
   .col-md-8 {
     float: none;
@@ -377,6 +377,37 @@ section h2 {
     }
   }
 
+}
+
+.top-footer {
+  background-color: $brand-color;
+  color: #fff;
+  text-align: center;
+  padding: $medium-space 0;
+
+  h2 {
+    margin-bottom: 0;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 24px;
+  }
+
+  .cta {
+    padding: 5px;
+  }
+
+  .cta-btn {
+    display: inline-block;
+  }
+
+  .cta-btn:visited {
+    color: $white;
+    text-decoration: none;
+  }
+
+  .cta-btn:hover {
+    color: $brand-color;
+  }
 }
 
 .footer-heading {
