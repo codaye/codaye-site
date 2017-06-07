@@ -349,7 +349,7 @@ section h2 {
 }
 
 .social-media img {
-  height: 25px;
+  height: 16px;
 }
 
 .social-media a:last-child {
@@ -408,6 +408,27 @@ section h2 {
   .cta-btn:hover {
     color: $brand-color;
   }
+}
+
+.bottom-footer {
+  padding: 8px;
+
+  .col-md-6 .social-media {
+    @media (min-width: 768px){
+      text-align: right;
+    }
+  }
+}
+
+.copyright {
+  color: $brand-color;
+  text-align: left;
+}
+
+@media (max-width: 768px){
+    .copyright, .bottom-footer .social-media {
+        text-align: center;
+    }
 }
 
 .footer-heading {

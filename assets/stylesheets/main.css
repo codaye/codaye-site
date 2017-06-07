@@ -410,7 +410,7 @@ section h2 {
   transition: all 0.3s; }
 
 .social-media img {
-  height: 25px; }
+  height: 16px; }
 
 .social-media a:last-child {
   margin-right: 0; }
@@ -449,6 +449,20 @@ section h2 {
     text-decoration: none; }
   .top-footer .cta-btn:hover {
     color: #F05F40; }
+
+.bottom-footer {
+  padding: 8px; }
+  @media (min-width: 768px) {
+    .bottom-footer .col-md-6 .social-media {
+      text-align: right; } }
+
+.copyright {
+  color: #F05F40;
+  text-align: left; }
+
+@media (max-width: 768px) {
+  .copyright, .bottom-footer .social-media {
+    text-align: center; } }
 
 .footer-heading {
   font-size: 18px;
