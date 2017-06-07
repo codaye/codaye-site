@@ -252,13 +252,17 @@ section h2 {
                box-shadow: $shadow-name;
      }
 
-  @include box-shadow($dark-shadow);
+  @include box-shadow($subtle-shadow);
 }
 
 #contact .card {
   max-width: 700px;
-  margin-top: 48px;
+  margin-top: 24px;
   padding: 48px;
+
+  h5 {
+    margin-top: 20px;
+  }
 
   .social-media {
     margin-top: 24px;
