@@ -161,6 +161,12 @@
     }
 }
 
+@media (min-width: 768px){
+    .navbar-button {
+        float: right;
+    }
+}
+
 .call-to-action {
     padding: $really-large-space 0;
 
@@ -181,10 +187,16 @@
     }
 }
 
-@media (min-width: 768px){
-    .navbar-button {
-        float: right;
-    }
+.btn {
+  position: relative;
+  height: 28px;
+  border-radius: 4px;
+  padding: 4px 16px 4px 16px;
+  box-sizing: border-box;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
 }
 
 section h2 {
@@ -240,7 +252,52 @@ section h2 {
                box-shadow: $shadow-name;
      }
 
-  @include box-shadow(0px 4px 10px 0px rgba(119, 119, 119, 0.64));
+  @include box-shadow($subtle-shadow);
+}
+
+#contact .card {
+  max-width: 700px;
+  margin-top: 24px;
+  padding: 48px;
+
+  h5 {
+    margin-top: 20px;
+  }
+
+  .social-media {
+    margin-top: 24px;
+  }
+
+  .social-media a {
+    font-size: 14px;
+    color: $white;
+    display: inline;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    line-height: 20px;
+    height: 28px;
+    margin: 2px;
+    border-radius: 4px;
+    padding: 4px 16px 4px 16px;
+    box-sizing: border-box;
+
+      img {
+        height: 16px;
+        padding-right: 4px;
+      }
+  }
+
+  .twitter {
+    background-color: #1b95e0;
+  }
+  .email {
+    background-color: #F14336;
+  }
+  .messenger {
+    background-color: #337ab7;
+  }
+  .whatsapp {
+    background-color: #55CD6C;
+  }
 }
 
 /*
@@ -275,18 +332,11 @@ section h2 {
 *Social Media
 */
 
-.social-media {
-  //margin-bottom: 20px;
-}
-
 .social-media a {
-  display: inline-block;
-  //width: 14px;
+  display: inline;
   height: 30px;
-  //border: 2px solid #242424;
   border-radius: 10%;
   border-radius: 10%;
-  //margin: 5px 10px 5px 0;
   padding: 10px;
   color: #242424;
   font-size: 20px;
