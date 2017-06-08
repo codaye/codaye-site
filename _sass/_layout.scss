@@ -107,6 +107,17 @@
     }
 }
 
+@media (max-width: 768px) {
+    .site-nav img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .nav {
+      padding: 0;
+    }
+}
+
 @media (min-width: 768px){
     .navbar-nav>li, .navbar-nav {
         float: none;
@@ -132,6 +143,18 @@
     display: inline;
 }
 
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: rgba(255, 117, 117, 0);
+    color: $white;
+}
+
+@media (max-width: 768px) {
+    .nav {
+      padding: 0;
+    }
+}
+
 .navbar {
     margin-bottom: 0;
 }
@@ -145,12 +168,6 @@
 .navbar-default .navbar-nav>.active>a:hover {
     color: inherit;
     background-color: none;
-}
-
-.nav>li>a:focus, .nav>li>a:hover {
-    text-decoration: none;
-    background-color: rgba(255, 117, 117, 0);
-    color: $white;
 }
 
 .navbar-button {
@@ -167,6 +184,13 @@
     }
 }
 
+@media (min-width: 768px){
+  .navbar-button {
+    float: none;
+    text-align: center;
+  }
+}
+
 .call-to-action {
     padding: $really-large-space 0;
 
@@ -179,11 +203,12 @@
     border: thin $white solid;
     border-radius: $small-radius;
     padding: $small-space $medium-space;
+    color: $white;
 
     &:hover, &:active {
-        background-color: $white;
-        color: $brand-color;
-        text-decoration: none;
+      background-color: $white;
+      color: $brand-color;
+      text-decoration: none;
     }
 }
 
@@ -348,7 +373,7 @@ section h2 {
 }
 
 .social-media img {
-  height: 25px;
+  height: 16px;
 }
 
 .social-media a:last-child {
@@ -364,8 +389,7 @@ section h2 {
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
-    padding: $medium-space 0;
+  height: auto;
 
   .col-md-8 {
     float: none;
@@ -377,6 +401,58 @@ section h2 {
     }
   }
 
+}
+
+.top-footer {
+  background-color: $brand-color;
+  color: #fff;
+  text-align: center;
+  padding: $medium-space 0;
+
+  h2 {
+    margin-bottom: 0;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 24px;
+  }
+
+  .cta {
+    padding: 5px;
+  }
+
+  .cta-btn {
+    display: inline-block;
+  }
+
+  .cta-btn:visited {
+    color: $white;
+    text-decoration: none;
+  }
+
+  .cta-btn:hover {
+    color: $brand-color;
+  }
+}
+
+.bottom-footer {
+  padding: 8px;
+
+  .col-md-6 .social-media {
+    @media (min-width: 768px){
+      text-align: right;
+    }
+  }
+}
+
+.copyright {
+  color: $brand-color;
+  text-align: left;
+}
+
+@media (max-width: 768px){
+    .copyright, .bottom-footer .social-media {
+        text-align: center;
+    }
 }
 
 .footer-heading {
