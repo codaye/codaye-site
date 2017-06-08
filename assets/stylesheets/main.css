@@ -221,6 +221,13 @@ pre {
         .site-nav .page-link:not(:last-child) {
           margin-right: 0; } }
 
+@media (max-width: 768px) {
+  .site-nav img {
+    display: block;
+    margin: 0 auto; }
+  .nav {
+    padding: 0; } }
+
 @media (min-width: 768px) {
   .navbar-nav > li, .navbar-nav {
     float: none; } }
@@ -242,6 +249,15 @@ pre {
 .nav > li > a {
   display: inline; }
 
+.nav > li > a:focus, .nav > li > a:hover {
+  text-decoration: none;
+  background-color: rgba(255, 117, 117, 0);
+  color: #fdfdfd; }
+
+@media (max-width: 768px) {
+  .nav {
+    padding: 0; } }
+
 .navbar {
   margin-bottom: 0; }
 
@@ -254,11 +270,6 @@ pre {
   color: inherit;
   background-color: none; }
 
-.nav > li > a:focus, .nav > li > a:hover {
-  text-decoration: none;
-  background-color: rgba(255, 117, 117, 0);
-  color: #fdfdfd; }
-
 .navbar-button {
   display: inline-block; }
   .navbar-button a {
@@ -267,6 +278,11 @@ pre {
 @media (min-width: 768px) {
   .navbar-button {
     float: right; } }
+
+@media (min-width: 768px) {
+  .navbar-button {
+    float: none;
+    text-align: center; } }
 
 .call-to-action {
   padding: 48px 0; }
