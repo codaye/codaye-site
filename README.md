@@ -10,7 +10,7 @@ With [npm](https://www.npmjs.com/) installed, run
 
 Run gulp by running
 
-    $ npm install -g common-readme
+    $ gulp
 
 ## License
 MIT
