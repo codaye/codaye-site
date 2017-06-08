@@ -296,7 +296,7 @@ section h2 {
   .social-media a {
     font-size: 14px;
     color: $white;
-    display: inline;
+    display: inline-block;
     font-family: "Helvetica Neue", Arial, sans-serif;
     line-height: 20px;
     height: 28px;
@@ -413,7 +413,7 @@ section h2 {
     margin-bottom: 0;
     display: inline-block;
     vertical-align: middle;
-    padding: 0 24px;
+    padding: 16px 24px;
   }
 
   .cta {
