@@ -15,7 +15,7 @@
     "gulp",
     "generator"
   ],
-  "author": "Codaye",
+  "author": "Codaye Technologies",
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.12.10",
@@ -24,5 +24,16 @@
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-sass": "^2.3.1"
+  },
+  "repository": {
+      "type": "git",
+      "url": "git+https://github.com/codaye/codaye-site.git"
+    },
+    "author": "Codaye Technologies",
+    "license": "https://github.com/codaye/codaye-site/LICENSE",
+    "bugs": {
+      "url": "https://github.com/codaye/codaye-site/issues"
+    },
+    "homepage": "https://github.com/codaye/codaye-site/README.md"
   }
 }
