@@ -26,14 +26,11 @@
     "gulp-sass": "^2.3.1"
   },
   "repository": {
-      "type": "git",
-      "url": "git+https://github.com/codaye/codaye-site.git"
-    },
-    "author": "Codaye Technologies",
-    "license": "https://github.com/codaye/codaye-site/LICENSE",
-    "bugs": {
-      "url": "https://github.com/codaye/codaye-site/issues"
-    },
-    "homepage": "https://github.com/codaye/codaye-site/README.md"
-  }
+    "type": "git",
+    "url": "git+https://github.com/codaye/codaye-site.git"
+  },
+  "bugs": {
+    "url": "https://github.com/codaye/codaye-site/issues"
+  },
+  "homepage": "https://github.com/codaye/codaye-site/README.md"
 }
