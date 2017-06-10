@@ -4,6 +4,11 @@ var cp          = require('child_process'),
     browserSync = require('browser-sync'),
     sass        = require('gulp-sass'),
     autoprefix  = require('gulp-autoprefixer');
+    gutil       = require('gulp-util');
+    argv        = require('minimist')(process.argv);
+    gulpif      = require('gulp-if');
+    prompt      = require('gulp-prompt');
+    rsync       = require('gulp-rsync');
 
 var paths = {
   siteDir: '_site/',
@@ -89,6 +94,64 @@ gulp.task('watch', function () {
 // Build site without starting server and watching for changes.
 gulp.task('build', ['sass', 'jekyll:build']);
 
+gulp.task('deploy', function() {
+
+  // Dirs and Files to sync
+  rsyncPaths = [paths.siteDir + '*.html', paths.siteDir + '**/*'];
+
+  // Default options for rsync
+  rsyncConf = {
+    progress: true,
+    root: "_site/",
+    incremental: true,
+    relative: true,
+    emptyDirectories: true,
+    recursive: true,
+    clean: true,
+    exclude: [],
+  };
+
+  // Staging
+  if (argv.staging) {
+
+    rsyncConf.hostname = 'new.codaye.com'; // hostname
+    rsyncConf.username = 'codayetest'; // ssh username
+    rsyncConf.destination = '/home/codayetest/new.codaye.com'; // path where uploaded files go
+
+  // Production
+  } else if (argv.production) {
+
+    rsyncConf.hostname = ''; // hostname
+    rsyncConf.username = ''; // ssh username
+    rsyncConf.destination = ''; // path where uploaded files go
+
+
+  // Missing/Invalid Target
+  } else {
+    throwError('deploy', gutil.colors.red('Missing or invalid target'));
+  }
+
+
+  // Use gulp-rsync to sync the files
+  return gulp.src(rsyncPaths)
+  .pipe(gulpif(
+      argv.production,
+      prompt.confirm({
+        message: 'Heads Up! Are you SURE you want to push to PRODUCTION?',
+        default: false
+      })
+  ))
+  .pipe(rsync(rsyncConf));
+
+});
+
+
+function throwError(taskName, msg) {
+  throw new gutil.PluginError({
+      plugin: taskName,
+      message: msg
+    });
+}
 
 // Default task, running just `gulp` will compile the sass,
 // compile the jekyll site, launch BrowserSync & watch files.
