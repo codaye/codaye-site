@@ -121,9 +121,9 @@ gulp.task('deploy', function() {
   // Production
   } else if (argv.production) {
 
-    rsyncConf.hostname = ''; // hostname
-    rsyncConf.username = ''; // ssh username
-    rsyncConf.destination = ''; // path where uploaded files go
+    rsyncConf.hostname = 'codaye.com'; // hostname
+    rsyncConf.username = 'steama4'; // ssh username
+    rsyncConf.destination = '/home/steama4/codaye.com'; // path where uploaded files go
 
 
   // Missing/Invalid Target
