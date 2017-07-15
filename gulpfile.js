@@ -9,6 +9,7 @@ var cp          = require('child_process'),
     gulpif      = require('gulp-if');
     prompt      = require('gulp-prompt');
     rsync       = require('gulp-rsync');
+    cleanCSS    = require('gulp-clean-css');
 
 var paths = {
   siteDir: '_site/',
@@ -64,11 +65,11 @@ gulp.task('sass', function () {
     .pipe(autoprefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {
         cascade: true
       }))
+    .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(gulp.dest(paths.siteDir + paths.cssDir))
     .pipe(browserSync.reload({ stream: true }))
     .pipe(gulp.dest(paths.cssDir));
 });
-
 
 // Reload browsersync without rebuilding
 gulp.task('reload', function () {

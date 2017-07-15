@@ -23,7 +23,9 @@
     "eslint-plugin-markdown": "^1.0.0-beta.6",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean-css": "^3.7.0",
     "gulp-if": "^2.0.2",
+    "gulp-prompt": "^0.2.0",
     "gulp-rsync": "0.0.8",
     "gulp-sass": "^2.3.1",
     "minimist": "^1.2.0"
