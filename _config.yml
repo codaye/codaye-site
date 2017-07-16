@@ -26,7 +26,8 @@ exclude: [
   package-lock.json
   gulpfile.js,
   node_modules,
-  '**/*.log'
+  '**/*.log',
+  README.md,
 ]
 
 # Site environment overrode in _config.dev.yml
