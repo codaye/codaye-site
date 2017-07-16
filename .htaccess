@@ -7,7 +7,18 @@ RewriteRule ^(.+)$ $1.html [L,QSA]
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*\.html\ HTTP/
 RewriteRule ^(.*)\.html$ /$1 [R=301,L]
 
+#Redirect to HTTPS
 RewriteCond %{HTTPS} !=on
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Caching 2 months for images and scripts
+<filesMatch ".(jpg|jpeg|png|gif|js|ico|svg)$">
+Header set Cache-Control "max-age=5184000, public"
+</filesMatch>
+
+# Caching 1 Week for CSS
+<filesMatch ".(css)$">
+Header set Cache-Control "max-age=604800, public"
+</filesMatch>
 
 ErrorDocument 404 /404.html
