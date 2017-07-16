@@ -23,6 +23,7 @@ exclude: [
   .gitignore,
   .sass-cache,
   package.json,
+  package-lock.json
   gulpfile.js,
   node_modules,
   '**/*.log'
