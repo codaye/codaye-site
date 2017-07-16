@@ -10,6 +10,7 @@ var cp          = require('child_process'),
     prompt      = require('gulp-prompt');
     rsync       = require('gulp-rsync');
     cleanCSS    = require('gulp-clean-css');
+    htmlmin     = require('gulp-htmlmin');
 
 var paths = {
   siteDir: '_site/',
